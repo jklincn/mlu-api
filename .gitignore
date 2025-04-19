@@ -9,9 +9,12 @@ wheels/
 # Virtual environments
 .venv
 
-# clangd
+# Clangd
 compile_commands.json
 .cache/
 
-# pytest
+# Pytest
 .pytest_cache/
+
+# Publish
+wheelhouse/

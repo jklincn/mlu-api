@@ -8,19 +8,18 @@ Python bindings for Cambricon's libraries
 
 ```
 uv sync
+uv pip install --no-build-isolation -e .
 ```
 
 ### Test
 
 ```
-uv run pytest
+uv run -- pytest -s
 ```
 
 ### How to generate compile_command.json
 
 ```
-# Avoid missing header caused by temporary environment
-uv pip install --no-build-isolation -e .
 ln -s build/cp310-cp310-linux_x86_64/compile_commands.json .
 ```
 

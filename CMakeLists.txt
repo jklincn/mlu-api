@@ -16,6 +16,7 @@ set(PYBIND11_FINDPYTHON ON)
 find_package(pybind11 CONFIG REQUIRED)
 
 # --- cndev module ---
-pybind11_add_module(_cndev_core MODULE csrc/cndev/core.cpp)
-target_link_libraries(_cndev_core PRIVATE cndev)
-install(TARGETS _cndev_core DESTINATION ${SKBUILD_PROJECT_NAME}/cndev)
+pybind11_add_module(_cndev MODULE csrc/cndev.cpp)
+target_link_libraries(_cndev PRIVATE cndev)
+set_target_properties(_cndev PROPERTIES OUTPUT_NAME "cndev")
+install(TARGETS _cndev DESTINATION ${SKBUILD_PROJECT_NAME})

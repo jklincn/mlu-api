@@ -13,7 +13,7 @@ uv sync
 ### Test
 
 ```
-uv run -- pytest
+uv run pytest
 ```
 
 ### How to generate compile_command.json

@@ -2,6 +2,22 @@
 
 Python bindings for Cambricon's libraries
 
+## Usage
+
+### Install
+
+```
+pip install mlu-api
+```
+
+### Example
+
+```
+from mlu_api import cndev
+
+print(cndev.get_device_count())
+```
+
 ## Development
 
 ### Build and Install
